@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulando DOM</title>
+</head>
+<body>
+    <!-- 
+        Eventos inline
+    <div id="app">
+        <button onclick="mostraAlerta()">Clica ai meu!</button>
+        <button onmouseover="mostraAlerta()"> Passa aqui!</button>
+        <input type="text" onkeypress="mostraAlerta()"/>
+    </div>
+    -->
+    <div id="app">
+        <input type="text" id="nome" name="nome"/>
+        <button class="botao">Adicionar</button>
+    </div>
+
+    <script>
+        var inputElement = document.querySelector('input#nome');
+        var btnElement = document.querySelector('button.botao')
+
+        btnElement.onclick = () => {
+            var text = inputElement.value;
+            alert(text)
+            inputElement.value = ""
+        }
+
+       /*
+       
+        function mostraAlerta(){
+            alert('Clicou no botão!!!')
+        }
+
+        var inputElementId = document.getElementById("nome");
+
+        //retorna um [] e vem todos os inputs e todos elementos das classes
+        var inputElementsTag = document.getElementsByTagName('input')[0];
+        var inputElemntsClass = document.getElementsByClassName('nome')[0];
+
+        //tag
+        var inputQuerySelector = document.querySelector('div#app input');
+
+        //propriedade
+        var inputQuerySelector = document.querySelector('input[name=nome]');
+
+        //varios elementos
+        var inputQuerySelector = document.querySelectorAll('input')[0]
+        */
+
+    </script>
+</body>
+</html>
