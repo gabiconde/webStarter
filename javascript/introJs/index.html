@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso Javascript</title>
+</head>
+<body>
+
+    <script>
+        function retornaSexo(sexo) {
+            switch (sexo) {
+                case 'M':
+                    return 'Masculino';
+                case 'F':
+                    return 'Feminino';
+                default:
+                    return 'Outros'
+            }
+        }
+        console.log(retornaSexo('M'))
+
+        //OR ||
+        //and &&
+        //not !
+
+        function exibeAlgo(){
+            console.log('oie')
+        }
+        setInterval(exibeAlgo, 1000);
+        setTimeout(console.log('tchau'), 5000)
+    </script>
+</body>
+</html>
